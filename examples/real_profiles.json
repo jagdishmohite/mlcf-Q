@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Chrome-QUIC",
+    "description": "Real captured Chromium (via Playwright automation) over QUIC/HTTP-3, across cloudflare-quic.com and quic.nginx.org. Transport values are exact, zero-variance constants confirmed across n=19 sessions (idle_timeout_ms=30000, initial_max_data=15728640, initial_max_streams_bidi=100). HTTP/3: qpack_max_table_capacity=65536, requires H3_DATAGRAM/MAX_FIELD_SECTION_SIZE/QPACK_BLOCKED_STREAMS. cipher_suites turned out identical between classes (both offer the same 3 standard TLS 1.3 suites) so not used as a constraint. supported_groups_any_of intentionally NOT set for Chrome: the discriminating group (0x001e) is aioquic's signature, not Chrome's -- Chrome's own distinguishing group (0x11ec) showed some inconsistency across sessions in earlier data and isn't used as a hard constraint here, kept as a documented open question rather than an assumption. pq_key_share_expected intentionally NOT set: PQ rollout appears to be a slower-moving, possibly server-controlled experiment state rather than a fixed per-session property. active_connection_id_limit intentionally omitted: never captured for Chrome.",
+    "expected": {
+      "transport": {
+        "idle_timeout_ms": [28000, 32000],
+        "initial_max_data": [15000000, 16500000],
+        "initial_max_streams_bidi": [95, 105]
+      },
+      "handshake": {
+        "alpn_contains": "h3"
+      },
+      "http3": {
+        "qpack_max_table_capacity": [60000, 70000],
+        "requires_settings": ["H3_DATAGRAM", "MAX_FIELD_SECTION_SIZE", "QPACK_BLOCKED_STREAMS"]
+      }
+    }
+  },
+  {
+    "name": "aioquic-library-client",
+    "description": "Real captured aioquic reference HTTP/3 client, across cloudflare-quic.com and quic.nginx.org. Transport values are exact, zero-variance constants confirmed across n=30 sessions (idle_timeout_ms=60000, initial_max_data=1048576, initial_max_streams_bidi=128, active_connection_id_limit=8). HTTP/3: qpack_max_table_capacity=4096, requires ENABLE_CONNECT_PROTOCOL/QPACK_BLOCKED_STREAMS. supported_groups_any_of=[0x001e] added: confirmed present in all 30/30 real aioquic sessions and 0/19 real Chrome sessions -- a clean, 100% discriminator in this dataset, closing the gap that previously left A1 (handshake-only spoofing) undetectable. pq_key_share_expected=false kept: consistent False across all samples, aioquic is a fixed unmodified reference codebase with no PQ support in this version.",
+    "expected": {
+      "transport": {
+        "idle_timeout_ms": [58000, 62000],
+        "initial_max_data": [950000, 1150000],
+        "initial_max_streams_bidi": [123, 133],
+        "active_connection_id_limit": [7, 9]
+      },
+      "handshake": {
+        "alpn_contains": "h3",
+        "supported_groups_any_of": ["0x001e"],
+        "pq_key_share_expected": false
+      },
+      "http3": {
+        "qpack_max_table_capacity": [3500, 4500],
+        "requires_settings": ["ENABLE_CONNECT_PROTOCOL", "QPACK_BLOCKED_STREAMS"]
+      }
+    }
+  }
+]

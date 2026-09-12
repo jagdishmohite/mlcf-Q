@@ -1,0 +1,38 @@
+{
+  "session_id": "sess-001-suspected-spoofer",
+  "src_context": "vantage-edge-1",
+  "transport": {
+    "quic_version": "1",
+    "idle_timeout_ms": 30000,
+    "initial_max_data": 1048576,
+    "initial_max_streams_bidi": 100,
+    "active_connection_id_limit": 2,
+    "max_udp_payload_size": 1350,
+    "disable_active_migration": true,
+    "migration_observed": false,
+    "initial_packet_size": 1252
+  },
+  "handshake": {
+    "cipher_suites": ["TLS_AES_128_GCM_SHA256", "TLS_CHACHA20_POLY1305_SHA256"],
+    "extensions": ["server_name", "supported_groups", "key_share", "alpn"],
+    "supported_groups": ["X25519", "X25519Kyber768Draft00"],
+    "alpn": ["h3"],
+    "pq_key_share_offered": true,
+    "pq_group_name": "X25519Kyber768Draft00",
+    "ja4_q": "q13d0310h3_52303910d61c_chrome-like"
+  },
+  "http3": {
+    "settings": {"QPACK_MAX_TABLE_CAPACITY": 4096, "QPACK_BLOCKED_STREAMS": 16},
+    "qpack_max_table_capacity": 4096,
+    "qpack_blocked_streams": 16,
+    "stream_concurrency": 100,
+    "pseudo_header_order": [":method", ":scheme", ":authority", ":path"],
+    "h3_negotiated": true
+  },
+  "behavioral": {
+    "inter_request_cadence_ms": [200.0, 200.0, 200.0, 200.1, 199.9, 200.0],
+    "connection_reuse": false,
+    "zero_rtt_used": false,
+    "burstiness": 0.001
+  }
+}

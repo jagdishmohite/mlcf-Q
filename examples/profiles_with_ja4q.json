@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Chrome-124-Windows-QUIC",
+    "description": "Chromium ~124, Windows, QUIC/HTTP-3 enabled, PQ hybrid key share rolled out",
+    "expected": {
+      "transport": {
+        "quic_version": "1",
+        "idle_timeout_ms": [
+          20000,
+          30000
+        ],
+        "initial_max_data": [
+          10000000,
+          30000000
+        ],
+        "initial_max_streams_bidi": [
+          90,
+          110
+        ],
+        "active_connection_id_limit": [
+          2,
+          4
+        ],
+        "disable_active_migration": false
+      },
+      "handshake": {
+        "alpn_contains": "h3",
+        "cipher_suites_any_of": [
+          "TLS_AES_128_GCM_SHA256",
+          "TLS_CHACHA20_POLY1305_SHA256"
+        ],
+        "pq_key_share_expected": true,
+        "ja4q_reference": "chrome-ja4q"
+      },
+      "http3": {
+        "qpack_max_table_capacity": [
+          4096,
+          65536
+        ],
+        "requires_settings": [
+          "QPACK_MAX_TABLE_CAPACITY"
+        ]
+      },
+      "behavioral": {
+        "min_burstiness": 0.15,
+        "zero_rtt_typical": true
+      }
+    }
+  },
+  {
+    "name": "Firefox-127-QUIC",
+    "description": "Firefox ~127, QUIC/HTTP-3 enabled",
+    "expected": {
+      "transport": {
+        "quic_version": "1",
+        "idle_timeout_ms": [
+          15000,
+          30000
+        ],
+        "initial_max_data": [
+          8000000,
+          25000000
+        ],
+        "initial_max_streams_bidi": [
+          16,
+          32
+        ],
+        "active_connection_id_limit": [
+          4,
+          8
+        ],
+        "disable_active_migration": false
+      },
+      "handshake": {
+        "alpn_contains": "h3",
+        "cipher_suites_any_of": [
+          "TLS_AES_128_GCM_SHA256",
+          "TLS_CHACHA20_POLY1305_SHA256"
+        ],
+        "pq_key_share_expected": false
+      },
+      "http3": {
+        "qpack_max_table_capacity": [
+          4096,
+          65536
+        ],
+        "requires_settings": [
+          "QPACK_MAX_TABLE_CAPACITY"
+        ]
+      },
+      "behavioral": {
+        "min_burstiness": 0.15,
+        "zero_rtt_typical": true
+      }
+    }
+  },
+  {
+    "name": "quic-go-library-client",
+    "description": "Generic quic-go-based non-browser client (e.g. scraping toolchain)",
+    "expected": {
+      "transport": {
+        "quic_version": "1",
+        "idle_timeout_ms": [
+          30000,
+          30000
+        ],
+        "initial_max_data": [
+          1048576,
+          1048576
+        ],
+        "initial_max_streams_bidi": [
+          100,
+          100
+        ],
+        "active_connection_id_limit": [
+          2,
+          2
+        ],
+        "disable_active_migration": true
+      },
+      "handshake": {
+        "alpn_contains": "h3",
+        "pq_key_share_expected": false,
+        "ja4q_reference": "quicgo-ja4q"
+      },
+      "http3": {
+        "requires_settings": [
+          "QPACK_MAX_TABLE_CAPACITY"
+        ]
+      },
+      "behavioral": {
+        "min_burstiness": 0.02,
+        "zero_rtt_typical": false
+      }
+    }
+  }
+]

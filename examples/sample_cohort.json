@@ -1,0 +1,254 @@
+[
+  {
+    "session_id": "cohort-a-1",
+    "transport": {
+      "quic_version": "1",
+      "idle_timeout_ms": 30000,
+      "initial_max_data": 15000000,
+      "initial_max_streams_bidi": 100,
+      "active_connection_id_limit": 2,
+      "disable_active_migration": false
+    },
+    "handshake": {
+      "ja4_q": "shared-target-ja4q",
+      "alpn": [
+        "h3"
+      ]
+    },
+    "http3": {
+      "h3_negotiated": true
+    },
+    "behavioral": {
+      "inter_request_cadence_ms": [
+        180,
+        220,
+        190,
+        240
+      ]
+    }
+  },
+  {
+    "session_id": "cohort-a-2",
+    "transport": {
+      "quic_version": "1",
+      "idle_timeout_ms": 30000,
+      "initial_max_data": 15200000,
+      "initial_max_streams_bidi": 100,
+      "active_connection_id_limit": 2,
+      "disable_active_migration": false
+    },
+    "handshake": {
+      "ja4_q": "shared-target-ja4q",
+      "alpn": [
+        "h3"
+      ]
+    },
+    "http3": {
+      "h3_negotiated": true
+    },
+    "behavioral": {
+      "inter_request_cadence_ms": [
+        175,
+        230,
+        200,
+        210
+      ]
+    }
+  },
+  {
+    "session_id": "cohort-a-3-library",
+    "transport": {
+      "quic_version": "1",
+      "idle_timeout_ms": 60000,
+      "initial_max_data": 1048576,
+      "initial_max_streams_bidi": 32,
+      "active_connection_id_limit": 8,
+      "disable_active_migration": true
+    },
+    "handshake": {
+      "ja4_q": "shared-target-ja4q",
+      "alpn": [
+        "h3"
+      ]
+    },
+    "http3": {
+      "h3_negotiated": true
+    },
+    "behavioral": {
+      "inter_request_cadence_ms": [
+        200,
+        200,
+        200,
+        200
+      ]
+    }
+  },
+  {
+    "session_id": "cohort-a-4-library-variant",
+    "transport": {
+      "quic_version": "1",
+      "idle_timeout_ms": 10000,
+      "initial_max_data": 524288,
+      "initial_max_streams_bidi": 16,
+      "active_connection_id_limit": 1,
+      "disable_active_migration": true
+    },
+    "handshake": {
+      "ja4_q": "shared-target-ja4q",
+      "alpn": [
+        "h3"
+      ]
+    },
+    "http3": {
+      "h3_negotiated": true
+    },
+    "behavioral": {
+      "inter_request_cadence_ms": [
+        50,
+        50,
+        50,
+        50
+      ]
+    }
+  },
+  {
+    "session_id": "cohort-a-5",
+    "transport": {
+      "quic_version": "1",
+      "idle_timeout_ms": 30000,
+      "initial_max_data": 14800000,
+      "initial_max_streams_bidi": 100,
+      "active_connection_id_limit": 2,
+      "disable_active_migration": false
+    },
+    "handshake": {
+      "ja4_q": "shared-target-ja4q",
+      "alpn": [
+        "h3"
+      ]
+    },
+    "http3": {
+      "h3_negotiated": true
+    },
+    "behavioral": {
+      "inter_request_cadence_ms": [
+        190,
+        210,
+        205,
+        195
+      ]
+    }
+  },
+  {
+    "session_id": "cohort-b-1",
+    "transport": {
+      "quic_version": "1",
+      "idle_timeout_ms": 22000,
+      "initial_max_data": 10300000,
+      "initial_max_streams_bidi": 100,
+      "active_connection_id_limit": 4,
+      "disable_active_migration": false
+    },
+    "handshake": {
+      "ja4_q": "native-chrome-population",
+      "alpn": [
+        "h3"
+      ]
+    },
+    "http3": {
+      "h3_negotiated": true
+    },
+    "behavioral": {
+      "inter_request_cadence_ms": [
+        300,
+        320,
+        310,
+        305
+      ]
+    }
+  },
+  {
+    "session_id": "cohort-b-2",
+    "transport": {
+      "quic_version": "1",
+      "idle_timeout_ms": 22100,
+      "initial_max_data": 10350000,
+      "initial_max_streams_bidi": 100,
+      "active_connection_id_limit": 4,
+      "disable_active_migration": false
+    },
+    "handshake": {
+      "ja4_q": "native-chrome-population",
+      "alpn": [
+        "h3"
+      ]
+    },
+    "http3": {
+      "h3_negotiated": true
+    },
+    "behavioral": {
+      "inter_request_cadence_ms": [
+        290,
+        330,
+        315,
+        300
+      ]
+    }
+  },
+  {
+    "session_id": "cohort-b-3",
+    "transport": {
+      "quic_version": "1",
+      "idle_timeout_ms": 21900,
+      "initial_max_data": 10250000,
+      "initial_max_streams_bidi": 100,
+      "active_connection_id_limit": 4,
+      "disable_active_migration": false
+    },
+    "handshake": {
+      "ja4_q": "native-chrome-population",
+      "alpn": [
+        "h3"
+      ]
+    },
+    "http3": {
+      "h3_negotiated": true
+    },
+    "behavioral": {
+      "inter_request_cadence_ms": [
+        305,
+        295,
+        300,
+        310
+      ]
+    }
+  },
+  {
+    "session_id": "cohort-b-4",
+    "transport": {
+      "quic_version": "1",
+      "idle_timeout_ms": 22050,
+      "initial_max_data": 10320000,
+      "initial_max_streams_bidi": 100,
+      "active_connection_id_limit": 4,
+      "disable_active_migration": false
+    },
+    "handshake": {
+      "ja4_q": "native-chrome-population",
+      "alpn": [
+        "h3"
+      ]
+    },
+    "http3": {
+      "h3_negotiated": true
+    },
+    "behavioral": {
+      "inter_request_cadence_ms": [
+        295,
+        305,
+        310,
+        300
+      ]
+    }
+  }
+]

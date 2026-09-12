@@ -1,0 +1,1018 @@
+[
+  {
+    "session": {
+      "session_id": "chrome-0",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 25000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": true,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "chrome-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.3
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "Chrome-124-Windows-QUIC",
+    "tier": "genuine",
+    "spoofed_as": null,
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {}
+  },
+  {
+    "session": {
+      "session_id": "chrome-1",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 25000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": true,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "chrome-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.3
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "Chrome-124-Windows-QUIC",
+    "tier": "genuine",
+    "spoofed_as": null,
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {}
+  },
+  {
+    "session": {
+      "session_id": "chrome-2",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 25000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": true,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "chrome-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.3
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "Chrome-124-Windows-QUIC",
+    "tier": "genuine",
+    "spoofed_as": null,
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {}
+  },
+  {
+    "session": {
+      "session_id": "chrome-3",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 25000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": true,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "chrome-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.3
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "Chrome-124-Windows-QUIC",
+    "tier": "genuine",
+    "spoofed_as": null,
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {}
+  },
+  {
+    "session": {
+      "session_id": "lib-0",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 30000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": false,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "quicgo-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.0005
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "quic-go-library-client",
+    "tier": "genuine",
+    "spoofed_as": null,
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {}
+  },
+  {
+    "session": {
+      "session_id": "lib-1",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 30000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": false,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "quicgo-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.0005
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "quic-go-library-client",
+    "tier": "genuine",
+    "spoofed_as": null,
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {}
+  },
+  {
+    "session": {
+      "session_id": "lib-2",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 30000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": false,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "quicgo-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.0005
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "quic-go-library-client",
+    "tier": "genuine",
+    "spoofed_as": null,
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {}
+  },
+  {
+    "session": {
+      "session_id": "lib-3",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 30000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": false,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "quicgo-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.0005
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "quic-go-library-client",
+    "tier": "genuine",
+    "spoofed_as": null,
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {}
+  },
+  {
+    "session": {
+      "session_id": "a1-0",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 30000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": true,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "chrome-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.0005
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "quic-go-library-client",
+    "tier": "A1",
+    "spoofed_as": "Chrome-124-Windows-QUIC",
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {
+      "handshake_source": "chrome-0",
+      "transport_http3_behavioral_source": "lib-0"
+    }
+  },
+  {
+    "session": {
+      "session_id": "a1-1",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 30000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": true,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "chrome-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.0005
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "quic-go-library-client",
+    "tier": "A1",
+    "spoofed_as": "Chrome-124-Windows-QUIC",
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {
+      "handshake_source": "chrome-0",
+      "transport_http3_behavioral_source": "lib-1"
+    }
+  },
+  {
+    "session": {
+      "session_id": "a1-2",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 30000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": true,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "chrome-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.0005
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "quic-go-library-client",
+    "tier": "A1",
+    "spoofed_as": "Chrome-124-Windows-QUIC",
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {
+      "handshake_source": "chrome-0",
+      "transport_http3_behavioral_source": "lib-2"
+    }
+  },
+  {
+    "session": {
+      "session_id": "a1-3",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 30000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": true,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "chrome-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.0005
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "quic-go-library-client",
+    "tier": "A1",
+    "spoofed_as": "Chrome-124-Windows-QUIC",
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {
+      "handshake_source": "chrome-0",
+      "transport_http3_behavioral_source": "lib-3"
+    }
+  },
+  {
+    "session": {
+      "session_id": "a2-0",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 30000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": true,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "chrome-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.0005
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "quic-go-library-client",
+    "tier": "A2",
+    "spoofed_as": "Chrome-124-Windows-QUIC",
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {
+      "handshake_http3_source": "chrome-1",
+      "transport_behavioral_source": "lib-0"
+    }
+  },
+  {
+    "session": {
+      "session_id": "a2-1",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 30000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": true,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "chrome-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.0005
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "quic-go-library-client",
+    "tier": "A2",
+    "spoofed_as": "Chrome-124-Windows-QUIC",
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {
+      "handshake_http3_source": "chrome-1",
+      "transport_behavioral_source": "lib-1"
+    }
+  },
+  {
+    "session": {
+      "session_id": "a2-2",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 30000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": true,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "chrome-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.0005
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "quic-go-library-client",
+    "tier": "A2",
+    "spoofed_as": "Chrome-124-Windows-QUIC",
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {
+      "handshake_http3_source": "chrome-1",
+      "transport_behavioral_source": "lib-2"
+    }
+  },
+  {
+    "session": {
+      "session_id": "a2-3",
+      "src_context": null,
+      "claimed_class": null,
+      "transport": {
+        "quic_version": null,
+        "idle_timeout_ms": 30000,
+        "initial_max_data": null,
+        "initial_max_stream_data_bidi_local": null,
+        "initial_max_stream_data_bidi_remote": null,
+        "initial_max_stream_data_uni": null,
+        "initial_max_streams_bidi": 100,
+        "initial_max_streams_uni": null,
+        "active_connection_id_limit": null,
+        "max_udp_payload_size": null,
+        "disable_active_migration": null,
+        "migration_observed": null,
+        "initial_packet_size": null
+      },
+      "handshake": {
+        "cipher_suites": [],
+        "extensions": [],
+        "supported_groups": [],
+        "alpn": [
+          "h3"
+        ],
+        "pq_key_share_offered": true,
+        "pq_group_name": null,
+        "key_share_size_bytes": null,
+        "ja4_q": "chrome-ja4q"
+      },
+      "http3": {
+        "settings": {
+          "QPACK_MAX_TABLE_CAPACITY": 4096
+        },
+        "qpack_max_table_capacity": null,
+        "qpack_blocked_streams": null,
+        "stream_concurrency": null,
+        "pseudo_header_order": [],
+        "h3_negotiated": true
+      },
+      "behavioral": {
+        "inter_request_cadence_ms": [],
+        "connection_reuse": null,
+        "zero_rtt_used": null,
+        "burstiness": 0.0005
+      },
+      "meta": {}
+    },
+    "ground_truth_class": "quic-go-library-client",
+    "tier": "A2",
+    "spoofed_as": "Chrome-124-Windows-QUIC",
+    "network_condition": {
+      "rtt_ms": null,
+      "loss_pct": null,
+      "nat": null,
+      "migration_observed": null,
+      "label": null
+    },
+    "source_meta": {
+      "handshake_http3_source": "chrome-1",
+      "transport_behavioral_source": "lib-3"
+    }
+  }
+]

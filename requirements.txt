@@ -1,0 +1,9 @@
+# Core pipeline (features, scoring, cohort test, CLI) needs only:
+click>=8.1
+
+# Optional: live pcap decoding (requires tshark on PATH)
+pyshark>=0.6
+
+# Optional: Instantiation L (learned coherence scorer)
+numpy>=1.24
+scikit-learn>=1.3
