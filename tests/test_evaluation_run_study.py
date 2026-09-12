@@ -83,10 +83,63 @@ def test_run_study_end_to_end_and_markdown_report():
     dataset = _small_dataset()
     results = run_study(dataset, PROFILES)
     assert results.dataset_summary["total"] == len(dataset)
-    assert len(results.rq1) == 3  # full model + 2 baselines
-    assert len(results.rq2) == 5  # full model + 4 ablations
+    assert len(results.rq1) == 4  # full model + weighted variant + 2 baselines
+    assert len(results.rq2) == 6  # full model + weighted variant + 4 ablations
 
     report = format_results_markdown(results)
     assert "RQ1: Attribution accuracy" in report
     assert "RQ2: Mimicry resistance" in report
     assert "full_model" in report
+
+
+def test_transport_weighting_resolves_a2_exact_tie():
+    """Regression test for the exact bug found against real captured data
+    (paper §7.3): an A2 session (handshake+http3 spliced from the target,
+    transport native to the true source) can land on an exact score tie
+    under uniform layer weights, broken arbitrarily. This reproduces that
+    tie deterministically with minimal profiles, then confirms
+    `full_model_transport_weighted_config` resolves it in the correct
+    direction (favoring the true class) without needing real capture data.
+    """
+    from mlcfq.evaluation.adversarial import make_a2_session
+    from mlcfq.evaluation.ablations import full_model_config, full_model_transport_weighted_config, run_ablation
+
+    profile_a = ClientProfile(
+        name="A-target", expected={"transport": {"idle_timeout_ms": [20000, 25000]}}
+    )
+    profile_b = ClientProfile(
+        name="B-true-source",
+        expected={
+            "transport": {"idle_timeout_ms": [30000, 30000]},
+            "http3": {"requires_settings": ["NEEDED_SETTING"]},
+        },
+    )
+    profiles = [profile_a, profile_b]
+
+    native_a = LabeledSession(
+        session=Session.from_dict(
+            {"session_id": "native-a", "transport": {"idle_timeout_ms": 22000}, "http3": {"h3_negotiated": True, "settings": {}}}
+        ),
+        ground_truth_class="A-target",
+        tier="genuine",
+    )
+    native_b = LabeledSession(
+        session=Session.from_dict(
+            {
+                "session_id": "native-b",
+                "transport": {"idle_timeout_ms": 30000},
+                "http3": {"h3_negotiated": True, "settings": {"NEEDED_SETTING": 1}},
+            }
+        ),
+        ground_truth_class="B-true-source",
+        tier="genuine",
+    )
+
+    a2 = make_a2_session(native_a, native_b, "a2-tie-repro")
+    assert a2.ground_truth_class == "B-true-source"
+
+    uniform_ranked = run_ablation(a2.session, full_model_config(profiles))
+    assert uniform_ranked[0].score == uniform_ranked[1].score  # confirms the tie reproduces
+
+    weighted_ranked = run_ablation(a2.session, full_model_transport_weighted_config(profiles))
+    assert weighted_ranked[0].profile_name == "B-true-source"  # tie resolved, correct class wins

@@ -86,6 +86,7 @@ def test_all_ablations_includes_full_model_and_four_removals():
     names = {c.name for c in configs}
     assert names == {
         "full_model",
+        "full_model_transport_weighted",
         "remove_transport",
         "remove_http3",
         "remove_behavioral",

@@ -12,7 +12,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any
 
-from mlcfq.evaluation.ablations import all_ablations, run_ablation
+from mlcfq.evaluation.ablations import all_ablations, full_model_transport_weighted_config, run_ablation
 from mlcfq.evaluation.baselines import handshake_only_baseline, ja4q_only_baseline
 from mlcfq.evaluation.dataset import LabeledSession
 from mlcfq.evaluation.metrics import (
@@ -63,10 +63,22 @@ def run_rq1(
 ) -> list[RQ1Result]:
     """RQ1 (attribution): does MLCF-Q improve Top-1/Top-k attribution over
     JA4-Q-only and handshake-only baselines?
+
+    Reports the transport-weighted full model (see
+    `ablations.full_model_transport_weighted_config`) as an additional,
+    separately-labeled method alongside the uniform-weight full model,
+    rather than replacing it -- so the effect of that weighting choice
+    stays visible and comparable rather than silently baked in.
     """
     true_labels = [s.ground_truth_class for s in sessions]
 
     full_model_ranked = [_full_model_ranked_names(s.session, profiles) for s in sessions]
+
+    weighted_config = full_model_transport_weighted_config(profiles)
+    weighted_ranked = [
+        [r.profile_name for r in run_ablation(s.session, weighted_config)] for s in sessions
+    ]
+
     ja4q_ranked = [ja4q_only_baseline(s, profiles) for s in sessions]
     handshake_ranked = [
         [r.profile_name for r in handshake_only_baseline(s, profiles)] for s in sessions
@@ -75,6 +87,7 @@ def run_rq1(
     results = []
     for method, ranked in (
         ("full_model", full_model_ranked),
+        ("full_model_transport_weighted", weighted_ranked),
         ("ja4q_only_baseline", ja4q_ranked),
         ("handshake_only_baseline", handshake_ranked),
     ):
@@ -149,9 +162,9 @@ def run_study(sessions: list[LabeledSession], profiles: list[ClientProfile]) -> 
 
 
 def format_results_markdown(results: StudyResults) -> str:
-    """Render study results as a Markdown report -- a starting point for
-    the tables that would replace the synthetic worked example (paper
-    §6.1) once real results are available.
+    """Render study results as a Markdown report -- these are the tables
+    reported in the paper's §7.2 pilot-study section, generated from
+    exactly this function's output.
     """
     lines = ["## Dataset summary", "", "```", str(results.dataset_summary), "```", ""]
 
